@@ -44,4 +44,10 @@ ros+opencv demo
         $ cd ~/src/clairvoyance_ws
         $ source devel/setup.bash
         $ rosrun clairvoyance face_detector
+        查看原始图像
+        rosrun image_view image_view image:=/image_raw
         运行人脸检测程序时需要注意，face_detector文件夹下的haarcascade_frontalface_alt.xml文件。在face_detector.cpp第110行中，需要将face_cascade后的路径替换成你自己的路径。重新编译后，再次运行。
+三、常用命令
+
+    1.查看发布的ros主题
+        $ rostopic list

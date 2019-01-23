@@ -20,7 +20,7 @@ public:
     : it_(nh_)
   {
     // Subscribe to input video feed and publish output video feed
-    image_sub_ = it_.subscribe("/usb_cam/image_raw", 1,
+    image_sub_ = it_.subscribe("/image_raw", 1,
       &Edge_Detector::imageCb, this);
     image_pub_ = it_.advertise("/edge_detector/raw_image", 1);
     cv::namedWindow(OPENCV_WINDOW);
