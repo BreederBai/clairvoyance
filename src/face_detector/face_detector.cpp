@@ -63,7 +63,8 @@ public:
           }
   }
 
-  void detect_faces(cv::Mat img)
+
+  void detect_faces(cv::Mat& img)
   {
     RNG rng( 0xFFFFFFFF );
     int lineType = 8;
