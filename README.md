@@ -51,3 +51,6 @@ ros+opencv demo
 
     1.查看发布的ros主题
         $ rostopic list
+
+    2.显示前置摄像头图像
+        $ rosrun image_view image_view image:=/image_raw
